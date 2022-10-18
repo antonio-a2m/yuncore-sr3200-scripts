@@ -5,7 +5,7 @@
 # Especially useful to format BUMPED data
 # This script is meant to be executed by a crontab every 5 mins
 # in order to keep file sizes manageable
-# 0-59/5* * * * * /opt/a2m/crontab-not-connected.sh 
+# 0-59/5* * * * * /opt/a2m/crontab-proxy.sh 
 # Needs  a BUMP-enabled squid installed
 # with the following logformat configured in squid.conf
 # logformat a2m  %{%Y/%m/%d %H:%M:%S}tl|%>a|%rm|"%ru"
