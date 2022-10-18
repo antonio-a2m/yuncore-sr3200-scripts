@@ -1,11 +1,18 @@
 #!/bin/ash
-# detects the nearby wifi devices by monitoring with airodump-ng
+# detects the nearby wifi devices not necesarilly connected
+# to this router, just by being nearby.
+# This is achieved by monitoring with airodump-ng
 # and formats the data to a csv
-#
+# This script is meant to be executed by a crontab
+# * * * * * /opt/a2m/crontab-not-connected.sh 
 # Needs  a monitor network interface called wlanmon
+#
+# Mac Address Randomization in clients
+# prevent this mechanismo to work as intended
 #
 # Antonio Gonzalez aggarcia@gmail.com
 # Oct 2020, the year of covid
+
 
 # variables
 MONIFACE=wlanmon
